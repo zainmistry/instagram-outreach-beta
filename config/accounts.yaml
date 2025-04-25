@@ -1,0 +1,54 @@
+# Group-level humanization configs
+# Define groups and their humanization settings
+
+groups:
+  power_users:
+    humanization:
+      random_delay:
+        min_seconds: 1
+        max_seconds: 4
+      random_break:
+        min_minutes: 2
+        max_minutes: 10
+        probability: 0.10
+      cooldown:
+        min_seconds: 30
+        max_seconds: 90
+      sleep_hours:
+        start_hour: 3
+        end_hour: 8
+  test_group:
+    humanization:
+      random_delay:
+        min_seconds: 2
+        max_seconds: 5
+      random_break:
+        min_minutes: 5
+        max_minutes: 10
+        probability: 0.1
+      cooldown:
+        min_seconds: 60
+        max_seconds: 120
+      sleep_hours:
+        start_hour: 2
+        end_hour: 7
+
+# List of Instagram accounts with proxy assignment
+accounts:
+  - username: arleicollum@gmail.com
+    password: example_passArisha@123$
+    proxy: proxy1  # Reference to proxies.yaml
+    profile_id: profile1  # For anti-detect browser profile
+    status: active
+    group: power_users
+  - username: @gmail.com
+    password: example_pass2
+    proxy: proxy2
+    profile_id: profile2
+    status: warmup
+  - username: your_test_username
+    password: your_test_password
+    proxy: proxy1
+    profile_id: profile1
+    status: warmup
+    group: test_group 

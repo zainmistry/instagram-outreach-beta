@@ -1,0 +1,16 @@
+# List of proxies for account assignment
+proxies:
+  - id: proxy1
+    type: residential
+    address: 123.45.67.89:10001  # Replace with your proxy address
+    username: proxyuser  # Optional, if your proxy requires auth
+    password: proxypass  # Optional, if your proxy requires auth
+    location: US
+    status: healthy
+  - id: proxy2
+    type: mobile
+    address: 98.76.54.32:20002
+    username: user2
+    password: pass2
+    location: UK
+    status: healthy 
