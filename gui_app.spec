@@ -5,7 +5,7 @@ a = Analysis(
     ['gui_app.py'],
     pathex=[],
     binaries=[],
-    datas=[('config', 'config'), ('resources', 'resources')],
+    datas=[('config', 'config')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -35,11 +35,4 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['resources/app_icon.ico'],
-)
-app = BUNDLE(
-    exe,
-    name='gui_app.app',
-    icon='resources/app_icon.ico',
-    bundle_identifier=None,
 )
